@@ -1,0 +1,243 @@
+html body {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(68, 68, 68);
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.main_video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.css-button-3d--grey {
+    min-width: 150px;
+    height: 50px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #6c757d;
+    box-shadow: 0 5px #495057;
+}
+
+.css-button-3d--grey:hover {
+    box-shadow: 0 3px #495057;
+    top: 1px;
+}
+
+.css-button-3d--grey:active {
+    box-shadow: 0 0 #495057;
+    top: 5px;
+}
+
+.game {
+    display: none;
+}
+
+.biomes img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+#timer {
+    position: absolute;
+    z-index: 1;
+    font-size: 4rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    background-color: rgb(255, 255, 255, 0.4);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10%;
+}
+
+.jeu {}
+
+.steve img {
+    width: 2rem;
+    height: auto;
+    position: relative;
+    top: 400px;
+    left: 50px;
+}
+
+.obstacles img {
+    width: 1.2rem;
+    height: auto;
+    position: relative;
+    top: 325.5px;
+    left: 1800px;
+}
+
+.sol {
+    background-color: black;
+    position: static;
+    width: 100%;
+    color: black;
+    padding: 0.3rem;
+    margin-top: 20rem;
+    opacity: 50%;
+}
+
+.restart {
+    margin-top: 2rem;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #343a40;
+    box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+}
+
+.died {
+    display: none;
+}
+
+.died img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.scoreEnd {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.lose_screen {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    width: 20rem;
+    height: 12rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    border: 5px solid black;
+}
+
+.lose_screen h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+    border: 13px double rgb(27, 26, 26);
+}
+
+.lose_screen button:hover {
+    box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+    background-color: #51575d;
+}
+
+.css-button-shadow--black:active {
+    box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+
+}
+
+.css-button-shadow--grey:active {
+    box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+}
+
+.animation_jump {
+    animation: jump 500ms infinite ease-out;
+}
+
+.animation_ennemies {
+    animation: ennemies 4s infinite linear;
+}
+
+.animation_ennemies_slow_speed {
+    animation: ennemies 3s infinite ease-out;
+}
+
+.animation_ennemies_speed {
+    animation: ennemies_speed 2s infinite linear;
+}
+
+.animation_ennemies_mega_speed {
+    animation: ennemies_speed 1.4s infinite ease-in;
+}
+
+.animation_ennemies_ultra_speed {
+    animation: ennemies_speed 800ms infinite linear;
+}
+
+
+/*Animation Jump*/
+@keyframes jump {
+    0% {
+        top: 400px;
+    }
+
+    25% {
+        top: 330px;
+    }
+
+    50% {
+        top: 280px;
+    }
+
+    75% {
+        top: 310px;
+    }
+
+    100% {
+        top: 400px;
+    }
+}
+
+/*animation Ennemies */
+@keyframes ennemies {
+    0% {
+        left: 1800px;
+    }
+
+    100% {
+        left: -100px;
+    }
+}
+
+/*animation Ennemies Speed-Up */
+@keyframes ennemies_speed {
+    0% {
+        left: 1800px;
+    }
+
+    100% {
+        left: -5px;
+    }
+}

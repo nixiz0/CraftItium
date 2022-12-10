@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CraftItium le jeu">
+    <link rel="icon" href="../Ressources/icon_crafting_table.png">
+    <link rel="stylesheet" href="./main_style.css">
+    <title>CraftItium</title>
+</head>
+<body>
+
+    <div class="menu">
+        <video class="main_video" autoplay="autoplay" muted="" loop="" src="../Ressources/img_biome/trailer_mc.mp4"></video>
+        <button onclick="starting_game()" id="start" class="css-button-3d--grey"> Lancer CraftItium  </button>
+    </div>
+
+    <section id="main_game" class="game">
+
+        <div id="js_timer">
+            <div id="timer">
+              
+            </div>        
+        <div>
+        <div class="biomes">
+            <img id="main_img" src="../Ressources/img_biome/biome1.png">
+        </div>
+
+        <div class="jeu">
+            <div class="steve">
+                <img id="steveimg" class="" src="../Ressources/steve.png">
+            </div>
+            <div class="obstacles">
+                <img id="enemies" class="animation_ennemies" src="../Ressources/zombie.png">
+            </div>
+        </div>
+        <div class="sol">
+            
+        </div>
+
+    </section>
+
+    <div class="died">
+        <img src="../Ressources/img_biome/died_loose_screen.png">
+    </div>
+
+    <div class="lose_screen">
+        <h2> Vous avez Perdu ! </h2>
+        <button onclick="restarting_game()" id="restart" class="restart"> Retour au Menu  </button>
+        <div id="timerend">  </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
