@@ -102,6 +102,17 @@ html body {
     opacity: 50%;
 }
 
+.touche {
+    position: relative;
+    left: 2rem;
+    margin-top: 3rem;
+}
+
+.touche img {
+    width: 10rem;
+    height: auto;
+}
+
 .restart {
     margin-top: 2rem;
     min-width: 130px;
