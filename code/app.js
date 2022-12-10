@@ -58,40 +58,40 @@ function starting_game() {
 
     // Biomes changeants : 
     function changeBiome2() {
-        document.getElementById("main_img").src = "../Ressources/img_biome/biome2.png";
+        document.getElementById("main_img").src = "./Ressources/img_biome/biome2.png";
     };
 
     function changeBiome3() {
-        document.getElementById("main_img").src = "../Ressources/img_biome/biome3.png";
+        document.getElementById("main_img").src = "./Ressources/img_biome/biome3.png";
     };
 
     function changeBiome4() {
-        document.getElementById("main_img").src = "../Ressources/img_biome/biome4.png";
+        document.getElementById("main_img").src = "./Ressources/img_biome/biome4.png";
     };
 
     function changeBiome5() {
-        document.getElementById("main_img").src = "../Ressources/img_biome/biome5.png";
+        document.getElementById("main_img").src = "./Ressources/img_biome/biome5.png";
     };
 
     function changeBiome6() {
-        document.getElementById("main_img").src = "../Ressources/img_biome/biome6.png";
+        document.getElementById("main_img").src = "./Ressources/img_biome/biome6.png";
     };
 
     function changeBiome7() {
-        document.getElementById("main_img").src = "../Ressources/img_biome/biome7.png";
+        document.getElementById("main_img").src = "./Ressources/img_biome/biome7.png";
     };
 
 
     // Mobs qui changent :
     function MobTransformSkeleton() {
-        enemies.src = "../Ressources/skeleton.png";
+        enemies.src = "./Ressources/skeleton.png";
         enemies.style.width = "2.7rem";
         enemies.classList.remove("animation_ennemies");
         enemies.classList.add("animation_ennemies_slow_speed");
     }
 
     function MobTransformCreeper() {
-        enemies.src = "../Ressources/creeper.png";
+        enemies.src = "./Ressources/creeper.png";
         enemies.style.width = "2.7rem";
         enemies.classList.remove("animation_ennemies_slow_speed");
         enemies.classList.add("animation_ennemies_speed");
@@ -99,24 +99,24 @@ function starting_game() {
     }
 
     function MobTransformZDesert() {
-        enemies.src = "../Ressources/zombie_desert.png";
+        enemies.src = "./Ressources/zombie_desert.png";
         enemies.style.width = "2.7rem";
     }
 
     function MobTransformPigmen() {
-        enemies.src = "../Ressources/pigmen.png";
+        enemies.src = "./Ressources/pigmen.png";
         enemies.style.width = "2.7rem";
         enemies.classList.remove("animation_ennemies_speed");
         enemies.classList.add("animation_ennemies_mega_speed");
     }
 
     function MobTransformEnderman() {
-        enemies.src = "../Ressources/enderman.png";
+        enemies.src = "./Ressources/enderman.png";
         enemies.style.width = "2.15rem";
     }
 
     function MobTransformHerobrine() {
-        enemies.src = "../Ressources/herobrine.png";
+        enemies.src = "./Ressources/herobrine.png";
         enemies.style.width = "2.2rem";
         enemies.classList.remove("animation_ennemies_mega_speed");
         enemies.classList.add("animation_ennemies_ultra_speed");
