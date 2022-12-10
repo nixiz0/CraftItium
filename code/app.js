@@ -144,7 +144,7 @@ function starting_game() {
 var died = document.querySelector(".died")
 var lose_screen = document.querySelector(".lose_screen");
 
-// Vérification de collision
+// Vérification de collision & comptage des points (plus on saute + on a de points à la fin)
 var verification1 = setInterval(function(){
     var persoTop = parseInt(window.getComputedStyle(steveimg).getPropertyValue("top"));
     var obstaclesLeft = parseInt(window.getComputedStyle(enemies).getPropertyValue("left"));
