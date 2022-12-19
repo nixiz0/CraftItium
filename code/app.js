@@ -9,6 +9,10 @@ var restart = document.getElementById("restart");
 // Déclaration des flèches du clavier pour détection
 document.onkeydown = checkKey;
 
+// Btn sous forme d'image pour jouer sur mobile et tablette
+var btn_up = document.getElementById("btn_up");
+var btn_down = document.getElementById("btn_down");
+
 // Déclaration des mobs
 var enemies = document.querySelector("#enemies");
 
@@ -27,6 +31,18 @@ function checkKey(e) {
         steveimg.classList.remove('animation_jump');
     }
 }
+
+// Rendre les btn mobile jouables et cliquables :
+btn_up.addEventListener("click", e => {
+    steveimg.classList.add('animation_jump');
+    setTimeout(function () {
+        steveimg.classList.remove('animation_jump');
+    }, 500)
+})
+
+btn_down.addEventListener("click", e => {
+    steveimg.classList.remove('animation_jump');
+})
 
 
 //Restart le jeu CraftItium

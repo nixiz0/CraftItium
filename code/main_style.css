@@ -105,6 +105,7 @@ html body {
 }
 
 .touche {
+    display: block;
     position: relative;
     left: 2rem;
     margin-top: 3rem;
@@ -113,6 +114,10 @@ html body {
 .touche img {
     width: 10rem;
     height: auto;
+}
+
+.btn_mobil {
+    display: none;
 }
 
 .restart {
@@ -153,9 +158,9 @@ html body {
 
 .lose_screen {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 30%;
-    left: 42%;
+    left: 40%;
     width: 20rem;
     height: 12rem;
     text-align: center;
@@ -253,4 +258,103 @@ html body {
     100% {
         left: -5px;
     }
+}
+
+
+@media (max-width:1000px) {
+    .touche {
+        display: none;
+    }
+    
+    .btn_mobil {
+        display: flex;
+        padding: 0.4rem;
+    }
+
+    .btn_mobil img {
+        border-radius: 50%;
+        margin-left: 1rem;
+        width: 4rem;
+        height: auto;
+    }
+
+    .btn_mobil h5 {
+        margin: 0;
+        margin-left: 0.5rem;
+        text-align: center;
+        color:rgb(222, 220, 220);
+        font-size: 0.9rem;
+    }
+
+    .died img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+    .lose_screen {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 35%;
+        width: 18rem;
+        height: 12rem;
+    }
+}
+
+@media (max-width:700px) {
+    .lose_screen {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 29%;
+        width: 16rem;
+        height: 13rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lose_screen h2 {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.3rem;
+        border: 13px double rgb(27, 26, 26);
+    }
+
+}
+
+@media (max-width:600px) {
+    .lose_screen {
+        top: 40%;
+        left: 24%;
+    }
+}
+
+@media (max-width:500px) {
+    .lose_screen {
+        top: 40%;
+        left: 21%;
+    }
+}
+
+
+@media (max-width:450px) {
+    .lose_screen {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 18%;
+        width: 16rem;
+        height: 13rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .lose_screen h2 {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.3rem;
+        border: 13px double rgb(27, 26, 26);
+    }
+
 }
