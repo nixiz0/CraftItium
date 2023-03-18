@@ -17,4 +17,3 @@ Go to this link for playing : https://craftitium.netlify.app/
 ## Author
 
 - [@nixiz0](https://github.com/nixiz0)
-
